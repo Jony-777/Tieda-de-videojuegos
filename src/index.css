@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --game-green: #107C10;
+    --game-green-light: #22c55e;
+    --game-green-glow: #2ee455;
+    --game-dark: #0a0c0e;
+    --game-carbon: #12161b;
+    --game-surface: #181d24;
+    --game-border: #262e3a;
+  }
+
+  body {
+    background-color: #0b0d11;
+    color: #f1f5f9;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1015;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e2632;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #107C10;
+}
+
+/* Glowing effects */
+.glow-game {
+  text-shadow: 0 0 16px rgba(46, 228, 85, 0.6);
+}
+
+.box-glow-game {
+  box-shadow: 0 0 25px -4px rgba(16, 124, 16, 0.45);
+}
+
+.box-glow-game-lg {
+  box-shadow: 0 0 35px -5px rgba(46, 228, 85, 0.35);
+}
+
+/* Carbon Grid background */
+.game-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(46, 228, 85, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(46, 228, 85, 0.035) 1px, transparent 1px);
+}

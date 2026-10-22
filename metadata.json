@@ -1,0 +1,6 @@
+{
+  "name": "GameZone - Plataforma de Videojuegos",
+  "description": "Plataforma web moderna de videojuegos con catálogo mediante API externa, servicios web Express, registro seguro y validaciones de la Unidad 3.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
